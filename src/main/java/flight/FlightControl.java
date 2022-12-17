@@ -51,7 +51,7 @@ public class FlightControl {
 
     public void checkMySeat(Plane myPlane, int seatNumber, String passenger){
         if (myPlane.getPassenger(seatNumber-1) != null){
-            System.out.println(myPlane.getPassenger(seatNumber - 1) + ", sorry, your seat is taken!");
+            System.out.println(passenger + ", sorry, your seat is taken!");
             freeSeat = false;
         }
         else {
